@@ -11,7 +11,6 @@ class TextProcessor:
         Apkopo tekstu, izmantojot summarization modeli
         """
         try:
-            # Izmantosim konkrētu summarization modeli
             summary = self.client.summarization(
                 text,
                 model="facebook/bart-large-cnn"
@@ -19,7 +18,6 @@ class TextProcessor:
             return summary.summary_text
         except Exception as e:
             print(f"Kļūda teksta apkopošanā: {e}")
-            # Fallback: vienkāršs apkopojums
             sentences = text.split('.')
             if len(sentences) > 2:
                 return '. '.join(sentences[:2]) + '.'
