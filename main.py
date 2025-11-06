@@ -13,10 +13,6 @@ def main():
         print("Kļūda: HUGGINGFACE_API_KEY nav atrasta .env failā")
         return
     
-    if not os.getenv("OPENAI_API_KEY"):
-        print("Kļūda: OPENAI_API_KEY nav atrasta .env failā")
-        return
-    
     # Inicializē procesorus
     text_processor = TextProcessor()
     keyword_extractor = KeywordExtractor()
@@ -57,7 +53,7 @@ def main():
         quiz_questions = quiz_generator.generate_quiz(text, num_questions=3)
         
         for i, question in enumerate(quiz_questions, 1):
-            print(f"\n{j}. {question['question']}")
+            print(f"\n{i}. {question['question']}")
             for j, option in enumerate(question['options'], 1):
                 print(f"   {chr(64+j)}) {option}")
             print(f"   Pareizā atbilde: {question['correct_answer']}")

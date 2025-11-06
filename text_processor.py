@@ -1,6 +1,5 @@
 import os
 from huggingface_hub import InferenceClient
-import requests
 
 class TextProcessor:
     def __init__(self):
@@ -9,16 +8,19 @@ class TextProcessor:
     
     def summarize_text(self, text, max_length=150):
         """
-        Apkopo tekstu, izmantojot Hugging Face modeli
+        Apkopo tekstu, izmantojot summarization modeli
         """
         try:
-            # Izmanto summarization modeli
+            # Izmantosim konkrētu summarization modeli
             summary = self.client.summarization(
                 text,
-                parameters={"max_length": max_length}
+                model="facebook/bart-large-cnn"
             )
             return summary.summary_text
         except Exception as e:
             print(f"Kļūda teksta apkopošanā: {e}")
-            # Fallback: atgriež pirmos 150 rakstzīmes
+            # Fallback: vienkāršs apkopojums
+            sentences = text.split('.')
+            if len(sentences) > 2:
+                return '. '.join(sentences[:2]) + '.'
             return text[:147] + "..." if len(text) > 150 else text
