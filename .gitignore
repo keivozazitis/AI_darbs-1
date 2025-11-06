@@ -1,0 +1,32 @@
+# API atslēgas un konfigurācija
+.env
+*.env
+config.py
+secrets.py
+
+# Python cache un virtual environment
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-selfcheck.json
+
+# OS specifiskie faili
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE faili
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test faili un logi
+*.log
+test_results/
+coverage.xml
