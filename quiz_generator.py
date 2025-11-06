@@ -24,7 +24,6 @@ class QuizGenerator:
             if i < len(sentences):
                 sentence = sentences[i]
                 if len(sentence) > 20:
-                    # Dažādi jautājumu veidi
                     question_types = [
                         f"Ko apraksta šis teikums: '{sentence[:80]}...'?",
                         f"Kāda ir galvenā doma: '{sentence[:80]}...'?",
