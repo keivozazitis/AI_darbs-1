@@ -1,0 +1,7 @@
+Mākslīgais intelekts (MI) ir datortehnoloģiju nozare, kas nodarbojas ar sistēmu izveidi, kas spēj veikt uzdevumus, kuriem parasti nepieciešama cilvēka intelektuāla darbība. Šie uzdevumi ietver runas atpazīšanu, lēmumu pieņemšanu, vizuālu uztveri un valodu tulkošanu.
+
+MI tiek iedalīta divos galvenajos veidos: vājā mākslīgajā intelektā un stiprajā mākslīgajā intelektā. Vājais MI ir speciāli veidots konkrētu uzdevumu veikšanai, piemēram, virtuālie asistenti vai ieteikumu sistēmas. Stiprais MI būtu sistēma, kas spēj veikt jebkuru intelektuālu uzdevumu, ko spēj veikt cilvēks.
+
+Mašīnmācīšanās ir MI apakšnozare, kas koncentrējas uz algoritmiem, kas ļauj datoriem mācīties no datiem. Dziļā mācīšanās ir mašīnmācīšanās veids, kas izmanto mākslīgos neironu tīklus ar daudzām slāņiem.
+
+MI tehnoloģijas mūsdienās tiek plaši izmantotas dažādās jomās: medicīnā, finansēs, izglītībā, transportā un daudzās citās nozarēs.
